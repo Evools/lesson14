@@ -1,0 +1,88 @@
+# Dependencies
+node_modules/
+.pnp.*
+.yarn/cache/
+.yarn/unplugged/
+.yarn/build-state.yml
+.yarn/install-state.gz
+
+# IDE / Editors
+.idea/
+.vscode/
+*.iml
+*.suo
+*.user
+*.code-workspace
+.history/
+.project
+.classpath
+.settings/
+
+# Environment
+.env
+.env.*
+!.env.example
+!.env.sample
+
+# Build / Output
+dist/
+build/
+out/
+.next/
+.nuxt/
+.output/
+.vercel/
+.netlify/
+.turbo/
+.cache/
+.parcel-cache/
+coverage/
+*.tsbuildinfo
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+*.orig
+
+# Operating systems
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100/
+.Trashes/
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Testing
+playwright-report/
+test-results/
+.nyc_output/
+
+# Local databases
+*.sqlite
+*.sqlite3
+*.db
+
+# Miscellaneous
+*.pid
+*.seed
+*.pid.lock
+.eslintcache
+.stylelintcache
