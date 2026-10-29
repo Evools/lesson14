@@ -11,61 +11,79 @@
 </head>
 <body>
 <div class="wrapper">
-    <header class="header">
-        <div class="container">
-            <div class="header__inner">
-                <a href="#" class="logo">
-                    <img src="./img/logo.svg" alt="Logo">
+    <div class="hero-container">
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <a href="#" class="logo">
+                        <img src="./img/logo.svg" alt="Logo">
+                    </a>
+
+                    <nav class="nav nav--desktop">
+                        <a href="#" class="nav__link">About Us</a>
+                        <a href="#" class="nav__link">Courses</a>
+                        <a href="#" class="nav__link">Events</a>
+                        <a href="#" class="nav__link">Blog</a>
+                        <a href="#" class="nav__link">Contacts</a>
+                    </nav>
+
+                    <div class="auth">
+                        <button class="btn btn--primary">
+                            Get consultation
+                        </button>
+
+                        <a href="#" class="auth__link">
+                            <img src="./img/icons/user.svg" alt="">
+                            <span>Log in / Register</span>
+                        </a>
+                    </div>
+
+                    <button class="hamburger-menu" type="button">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+
+                <div class="mobile-menu">
+                    <nav class="nav nav--mobile">
+                        <a href="#" class="nav__link">About Us</a>
+                        <a href="#" class="nav__link">Courses</a>
+                        <a href="#" class="nav__link">Events</a>
+                        <a href="#" class="nav__link">Blog</a>
+                        <a href="#" class="nav__link">Contacts</a>
+                    </nav>
+
+                    <div class="mobile-menu__actions">
+                        <button class="btn btn--primary">
+                            Get consultation
+                        </button>
+
+                        <a href="#" class="auth__link">
+                            <img src="./img/icons/user.svg" alt="">
+                            <span>Log in / Register</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="banner container">
+            <div class="banner__content">
+                <a href="#" class="play_showreel">
+                    <div class="play__pulse">
+                        <img src="./img/icons/play.svg" alt="play">
+                    </div>
+                    <span class="play__text">Play showreel</span>
                 </a>
-
-                <nav class="nav nav--desktop">
-                    <a href="#" class="nav__link">About Us</a>
-                    <a href="#" class="nav__link">Courses</a>
-                    <a href="#" class="nav__link">Events</a>
-                    <a href="#" class="nav__link">Blog</a>
-                    <a href="#" class="nav__link">Contacts</a>
-                </nav>
-
-                <div class="auth">
-                    <button class="btn btn--primary">
-                        Get consultation
-                    </button>
-
-                    <a href="#" class="auth__link">
-                        <img src="./img/icons/user.svg" alt="">
-                        <span>Log in / Register</span>
-                    </a>
-                </div>
-
-                <button class="hamburger-menu" type="button">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
-
-            <div class="mobile-menu">
-                <nav class="nav nav--mobile">
-                    <a href="#" class="nav__link">About Us</a>
-                    <a href="#" class="nav__link">Courses</a>
-                    <a href="#" class="nav__link">Events</a>
-                    <a href="#" class="nav__link">Blog</a>
-                    <a href="#" class="nav__link">Contacts</a>
-                </nav>
-
-                <div class="mobile-menu__actions">
-                    <button class="btn btn--primary">
-                        Get consultation
-                    </button>
-
-                    <a href="#" class="auth__link">
-                        <img src="./img/icons/user.svg" alt="">
-                        <span>Log in / Register</span>
-                    </a>
+                <h1 class="banner__title">Enjoy studying with Createx Online Courses</h1>
+                <div class="banner__actions">
+                    <a href="#" class="btn btn--secondary">About us</a>
+                    <a href="#" class="btn btn--primary">Explore courses</a>
                 </div>
             </div>
+            <img class="banner__img" src="./img/banner.svg" alt="banner">
         </div>
-    </header>
+    </div>
 </div>
 
 <script src="./js/main.js"></script>

@@ -29,12 +29,15 @@
     padding: 0 16px;
     margin: 0 auto;
 }
-
-
+.hero-container{
+    padding: 80px;
+    background: #FFDAD5;
+}
+.hero-container{
+    padding-top: 20px;
+}
 .header {
-    padding: 20px 0;
     position: relative;
-    background: #fff;
     z-index: 100;
 }
 
@@ -204,6 +207,80 @@
     }
 }
 
+.banner{
+    margin-top: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+.play_showreel{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.play__pulse{
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FF3F3A;
+    border-radius: 100%;
+    box-shadow: 0 0 0 12px #ff3f3a4d;
+    transition: .6s all;
+    animation: pulse 1s infinite alternate;
+}
+@keyframes pulse {
+    from{
+        box-shadow: 0 0 0 0 #ff3f3a4d;
+    }
+    to{
+        box-shadow: 0 0 0 12px #ff3f3a4d;
+    }
+}
+.play__text{
+    color: #1E212C;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 150%;
+}
+.banner__content{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 24px
+ }
+.banner__title{
+    color: #1E212C;
+    font-size: clamp(1.5rem, 0.591rem + 4.55vw, 4rem);
+    font-weight: 900;
+    line-height: 130%;
+    letter-spacing: 1px;
+}
+.banner__actions{
+    margin-top: 36px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.banner__img{
+    max-width: 600px;
+    width: 100%;
+}
+
+@media screen and (max-width: 1024px ) {
+    .banner__img{
+        max-width: 400px;
+    }
+}
+@media screen and (max-width: 932px ) {
+    .banner{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}
 
 @media (max-width: 680px) {
     .header {
@@ -233,5 +310,21 @@
     .mobile-menu__actions .btn {
         width: 100%;
         white-space: normal;
+    }
+    
+    .banner__img{
+        max-width: 100%;
+    }
+    .banner__actions{
+        flex-direction: column;
+        width: 100%;
+    }
+    .banner__actions .btn{
+        width: 100%;
+        text-align: center;
+    }
+    
+    .hero-container{
+        padding: 20px;
     }
 }
