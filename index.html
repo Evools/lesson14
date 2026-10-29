@@ -1,15 +1,73 @@
+
 <!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+
     <title>Document</title>
 </head>
 <body>
-    <div class="wrapper">
-        <header class="header"></header>
-    </div>
+<div class="wrapper">
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="#" class="logo">
+                    <img src="./img/logo.svg" alt="Logo">
+                </a>
+
+                <nav class="nav nav--desktop">
+                    <a href="#" class="nav__link">About Us</a>
+                    <a href="#" class="nav__link">Courses</a>
+                    <a href="#" class="nav__link">Events</a>
+                    <a href="#" class="nav__link">Blog</a>
+                    <a href="#" class="nav__link">Contacts</a>
+                </nav>
+
+                <div class="auth">
+                    <button class="btn btn--primary">
+                        Get consultation
+                    </button>
+
+                    <a href="#" class="auth__link">
+                        <img src="./img/icons/user.svg" alt="">
+                        <span>Log in / Register</span>
+                    </a>
+                </div>
+
+                <button class="hamburger-menu" type="button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+
+            <div class="mobile-menu">
+                <nav class="nav nav--mobile">
+                    <a href="#" class="nav__link">About Us</a>
+                    <a href="#" class="nav__link">Courses</a>
+                    <a href="#" class="nav__link">Events</a>
+                    <a href="#" class="nav__link">Blog</a>
+                    <a href="#" class="nav__link">Contacts</a>
+                </nav>
+
+                <div class="mobile-menu__actions">
+                    <button class="btn btn--primary">
+                        Get consultation
+                    </button>
+
+                    <a href="#" class="auth__link">
+                        <img src="./img/icons/user.svg" alt="">
+                        <span>Log in / Register</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+</div>
+
+<script src="./js/main.js"></script>
 </body>
 </html>
